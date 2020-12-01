@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "foodie-thing"
+  },
+  "targets": {
+    "foodie-thing": {
+      "hosting": {
+        "FoodieThingWeb": [
+          "foodie-thing"
+        ]
+      }
+    }
+  }
+}
