@@ -1,20 +1,6 @@
 {
   "hosting": [
     {
-      "public": "src",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    },
-    {
       "target": "FoodieThingWeb",
       "public": "dist/FoodieThingWeb",
       "ignore": [
@@ -29,12 +15,6 @@
               "value": "public,max-age=31536000,immutable"
             }
           ]
-        }
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
         }
       ]
     }
