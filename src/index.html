@@ -8,59 +8,12 @@
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/8.1.1/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.1.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.1.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.1.1/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.1.1/firebase-analytics.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
     </style>
       <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-  <body style="background-color:indianred;">
-    <div style="margin-top: 5%;margin-left: 15%; margin-right: 15%;">
-      <img src="https://firebasestorage.googleapis.com/v0/b/foodie-thing.appspot.com/o/web%2FFoodie%20Thing.png?alt=media&token=3d0fa17f-0eeb-4381-9476-9c20072e330f" width="80%">
-      <br><br><br><br>
-      <p style="color: white;font-size: 1.7em;">
-        Foodie Thing is a curated feed of the most delicious food across the internet, posted daily to over 200,000 people on Instagram.
-      </p> <br>
-      <p style="color: white; font-size: 1.7em;">
-        We aren’t foodie snobs, we are food inclusive and want to post pictures that capture all types of daily food cravings. Whether it’s green, fried, or smothered in hot fudge, we’ve got you covered.
-      </p>
-    </div>
-    
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'analytics',
-          ].filter(feature => typeof app[feature] === 'function');
-        } catch (e) {
-          console.error(e);
-        }
-      });
-    </script>
+  <body>
+    <app-root></app-root>
   </body>
 </html>
